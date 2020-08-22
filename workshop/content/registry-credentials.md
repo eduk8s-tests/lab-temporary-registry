@@ -12,6 +12,19 @@ To login to the registry using ``docker``, run:
 docker login -u {{ registry_username }} -p {{ registry_password }} {{ registry_host }}
 ```
 
+If you have an existing image you wish to push to the image registry, first
+tag it using:
+
+```
+docker tag myimage:latest {{ registry_host }}/myimage:latest
+```
+
+You can then push the image to the image registry using:
+
+```
+docker push {{ registry_host }}/myimage:latest
+```
+
 The image registry will be available for a period of 24 hours.
 
 If you no longer require the image registry and wish to delete it sooner,
