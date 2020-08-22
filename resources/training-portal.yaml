@@ -9,5 +9,4 @@ spec:
   workshops:
   - name: lab-temporary-registry
     capacity: 1
-    expires: 60m
-    orphaned: 5m
+    expires: 24h

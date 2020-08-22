@@ -4,7 +4,7 @@ metadata:
   name: lab-temporary-registry
 spec:
   title: Temporary Registry
-  description: A workshop for provisioning a temporary image registry.
+  description: Provides access to a temporary image registry.
   url: https://github.com/eduk8s-tests/lab-temporary-registry
   content:
     files: github.com/eduk8s-tests/lab-temporary-registry
