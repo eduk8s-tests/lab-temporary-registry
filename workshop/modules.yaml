@@ -1,4 +1,4 @@
 modules:
-    registry-credentials
+    registry-credentials:
         name: Registry Credentials
         exit_sign: Delete Registry
