@@ -1,25 +1,21 @@
 apiVersion: training.eduk8s.io/v1alpha2
 kind: Workshop
 metadata:
-  name: lab-markdown-sample
+  name: lab-temporary-registry
 spec:
-  title: Markdown Sample
-  description: A sample workshop using Markdown
-  vendor: eduk8s.io
-  difficulty: beginner
-  duration: 15m
-  url: https://github.com/eduk8s/lab-markdown-sample
+  title: Temporary Registry
+  description: A workshop for provisioning a temporary image registry.
+  url: https://github.com/eduk8s-tests/lab-temporary-registry
   content:
-    #image: quay.io/eduk8s/lab-markdown-sample:master
-    files: github.com/eduk8s/lab-markdown-sample
+    files: github.com/eduk8s-tests/lab-temporary-registry
   session:
     namespaces:
-      budget: small
+      budget: x-small
     applications:
       terminal:
+        enabled: false
+      registry:
         enabled: true
-        layout: split
-      console:
-        enabled: true
-      editor:
-        enabled: true
+    env:
+    - name: DEFAULT_PAGE
+      value: /workshop/

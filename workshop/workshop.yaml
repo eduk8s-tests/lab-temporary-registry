@@ -1,8 +1,5 @@
-name: Markdown Sample
+name: Tempopary Registry
 
 modules:
     activate:
-    - workshop-overview
-    - setup-environment
-    - exercises/01-sample-content
-    - workshop-summary
+    - registry-credentials
